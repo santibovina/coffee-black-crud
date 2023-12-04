@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Quicksand:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+.banner__logo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+.banner__logo img {
+    width: 30rem;
+}
+
+.seccion {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.seccion__titulo-principal {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: black solid 1px;
+    padding-bottom: 0.2rem;
+    width: 21rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion__titulo {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: black solid 1px;
+    padding-bottom: 0.2rem;
+    width: 15rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjetas__general {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-items: center;
+    justify-content:space-evenly;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    padding: 2rem;
+    /* border: solid blue 1px; */
+}
+
+.tarjeta {
+    display: flex;
+    flex-wrap: wrap;
+    height: 15rem;
+    width: 13rem;
+    background-color: rgb(255, 255, 255);
+    border: solid rgb(14, 118, 126) 1px;
+    border-radius: 1rem;
+    justify-content: center;
+}
+
+.tarjeta:hover {
+    box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tarjeta__agregar-link {
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 3.5rem;
+}
+
+.tarjeta__agregar-icono {
+    color: rgb(0, 0, 0);
+    font-size: 4rem;
+    position: absolute;
+    padding-top: 3.5rem;
+    padding-left: 1rem;
+}
+
+.tarjeta__listar-link {
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 3.5rem;
+}
+
+.tarjeta__listar-icono {
+    color: rgb(0, 0, 0);
+    font-size: 4rem;
+    position: absolute;
+    padding-top: 3.5rem;
+    padding-left: 1rem;
+}
+
+.tarjeta__modificar-link {
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 3.2rem;
+}
+
+.tarjeta__modificar-icono {
+    color: rgb(0, 0, 0);
+    font-size: 4rem;
+    position: absolute;
+    padding-top: 3.5rem;
+    padding-left: 1rem;
+}
+
+.tarjeta__eliminar-link {
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 3.2rem;
+}
+
+.tarjeta__eliminar-icono {
+    color: rgb(0, 0, 0);
+    font-size: 4rem;
+    position: absolute;
+    padding-top: 3.5rem;
+    padding-left: 1rem;
+}
+
+/* p {
+    background-color: #f9f9f9;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+} */
+
+h1, h2, h4, h5, h6 {
+    text-align: center;
+    color: black;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+h3 {
+    text-align: center;
+    color: #2a2a2a;
+    font-size: 0.9rem;
+}
+
+.formulario {
+    display: grid;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+form {
+    width: 400px;
+    gap: 5rem;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    border: solid rgb(14, 118, 126) 1px;
+    border-radius: 1rem;
+    height: fit-content;
+}
+
+label {
+    display: block;
+    font-size: 0.9rem;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 1rem;
+    margin-top: 0.4rem;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+input[type='file'] {
+    margin-top: 0.4rem;
+    margin-bottom: 1rem;
+}
+
+input[type="submit"] {
+    padding: 10px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    color: rgb(14, 118, 126);
+}
+
+button {
+    font-size: 0.9rem;
+    padding: 8px;
+    margin-top: 1rem;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    color: rgb(14, 118, 126);
+}
+
+.boton__eliminar {
+    font-size: 0.9rem;
+    padding: 0.4rem;
+    margin-top: 0rem;
+    background-color: white;
+    color: black;
+    border: solid #d72323 1px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.boton__eliminar:hover {
+    background-color: #d72323;
+    color: white;
+}
+
+.menu__principal-listado {
+    margin-bottom: 3rem;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+    font-size: 0.9rem;
+}
+
+.menu__principal {
+    text-decoration: none;
+    color: #000000;
+    font-size: 0.9rem;
+    padding-left: 1rem;
+}
+
+.menu__principal:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.2rem;
+}
+
+.listado__productos {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+table {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 2.5rem;
+    background-color: rgb(255, 255, 255);
+    border: solid rgb(14, 118, 126) 1px;
+    border-radius: 1rem;
+}
+
+.th__codigo {
+    border-bottom: solid black 1px;
+    width: 2rem;
+    padding-right: 2rem;
+    text-align: left;
+}
+
+.th__descripcion {
+    border-bottom: solid black 1px;
+    width: 12rem;
+    text-align: left;
+}
+
+.th__cantidad {
+    border-bottom: solid black 1px;
+    width: 2rem;
+    padding-left: 2rem;
+}
+
+.th__precio {
+    border-bottom: solid black 1px;
+    width: 6rem;
+    padding-left: 2rem;
+    text-align: right;
+}
+
+.th__imagen {
+    border-bottom: solid black 1px;
+    width: 15rem;
+}
+
+.th__proveedor {
+    border-bottom: solid black 1px;
+    width: 2rem;
+    padding-left: 2rem;
+    text-align: right;
+}
+
+.th__acciones {
+    border-bottom: solid black 1px;
+    width: 8rem;
+    padding-left: 2rem;
+    text-align: right;
+}
+
+.table__body {
+    font-size: 0.8rem;
+
+}
+
+.mostrar__producto {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(3, 5fr);
+    grid-template-rows: auto;
+    color: whitesmoke;
+    background-color: #2a2a2a;
+    align-content: center;
+    text-align: center;
+    font-size: 0.8rem;
+    height: 8rem;
+}
+
+.footer a {
+    color: whitesmoke;
+    text-decoration: none;
+    align-content: center;
+}
