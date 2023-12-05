@@ -125,7 +125,7 @@ class Catalogo:
 #--------------------------------------------------------------------
 # Crear una instancia de la clase Catalogo
 #catalogo = Catalogo(host='localhost', user='root', password='', database='miapp')
-catalogo = Catalogo(host='localhost', user='root', password='', database='miapp')
+catalogo = Catalogo(host='santibovina.mysql.pythonanywhere-services.com', user='santibovina', password='rootroot', database='santibovina$miapp')
 
 
 # catalogo.agregar_producto(1, "Televisor 25",11, 340000, "tele.jpg",1)
@@ -134,7 +134,8 @@ catalogo = Catalogo(host='localhost', user='root', password='', database='miapp'
 
 
 # Carpeta para guardar las imagenes.
-RUTA_DESTINO = './static/imagenes/'
+RUTA_DESTINO = '/home/santibovina/mysite/static/imagenes/'
+#RUTA_DESTINO = './static/imagenes/'
 
 #--------------------------------------------------------------------
 @app.route("/productos", methods=["GET"])
