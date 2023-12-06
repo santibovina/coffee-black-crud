@@ -7,7 +7,7 @@ function iniciarSesion() {
 
     if (usuario === usuarioCorrecto && contrasena === contrasenaCorrecta) {
         // Redirigir a modificaciones_proveedores.html ESTO DEBE DE APUNTAR A LA PAGINA INDEX O A DONDE LO QUIERAS MANDAR
-        window.location.href = 'index.html';
+        window.location.href = 'logged.html';
     } else {
         alert('Usuario o contraseña incorrectos');
     }
