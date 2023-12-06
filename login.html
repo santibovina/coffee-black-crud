@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COFFEE:BLACK</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Roboto:ital,wght@0,100;1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/estilos.css">
+    <link rel="shortcut icon" href="/img/flaticon.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="banner__logo">
+        <img src="/img/coffee_black_hor.png" alt="logo" width="auto">
+    </div>
+    <div class="seccion">
+        <div class="seccion__titulo">
+            <h1>Admin Login</h1>
+        </div>
+    </div>
+
+    <!-- Contenedor del formulario de inicio de sesión -->
+    <div class="login__admin">
+        <form onsubmit="event.preventDefault(); iniciarSesion();">
+            <label for="usuario">Usuario:</label>
+            <input type="text" id="usuario" required placeholder="usuario"><br>
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" id="contrasena" required placeholder="contrasena"><br>
+            <button type="submit">Iniciar Sesión</button>
+        </form>
+    </div>
+
+    <script src="/js/login.js"></script>
+
+
+
+</body>
+
+</html>
